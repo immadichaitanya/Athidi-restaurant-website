@@ -33,6 +33,11 @@
     width: 40px;
     margin-right: 15px;
 }
+.footer-content-left-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+}
 .footer hr{
     width: 100%;
     height: 2px;

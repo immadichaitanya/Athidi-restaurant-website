@@ -1,56 +1,111 @@
-.navbar{
-    padding: 20px 0px;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.navbar .logo{
-    width: 150px;
-}
-.navbar-menu{
+    padding: 10px 20px;
+    background-color: rgb(247, 106, 55);
+    border-radius: 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+  }
+  
+  .navbar-menu {
     display: flex;
-    list-style: none;
+    list-style-type: none;
     gap: 20px;
-    color: #49557e;
-    font-size: 18px;
-}
-.navbar-right{
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .navbar-menu a.active {
+    border-bottom: 2px solid #fff;
+  }
+  
+  .navbar-right {
     display: flex;
     align-items: center;
-    gap: 40px;
-}
-.navbar button{
-    background: transparent;
-    font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
-    padding: 10px 30px;
-    border-radius: 50px;
+    gap: 15px;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-search-input {
+    width: 150px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: #555;
+    background-color: transparent;
+    font-size: 14px;
+  }
+  
+
+  .navbar-search-button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
     cursor: pointer;
-    transition: 0.3s;
-}
-.navbar button:hover{
-    background-color: #fff4f2;
-}
-.navbar .active{
-    padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
-}
-.navbar li{
-    cursor: pointer;
-}
-.navbar-search-icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search-button img {
+    height: 16px;
+    width: 16px;
+    filter: invert(1); 
+  }
+  
+
+  .navbar-cart-icon {
     position: relative;
-}
-.navbar-search-icon .dot{
+  }
+  
+  .navbar-cart-icon .dot {
     position: absolute;
-    min-width: 10px;
-    min-height: 10px;
-    background-color: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px;
-}
+    top: 0;
+    right: 0;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+ 
+  button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
 
 @media (max-width:1050px) {
     .navbar .logo{
